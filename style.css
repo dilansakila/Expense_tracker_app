@@ -14,3 +14,42 @@ body {
   margin: 0;
   font-family: 'Lato';
 }
+
+header {
+    background-color: #2ecc71;
+    color: #FFFFFF;
+    height: 75px;
+    width: 100%;
+  }
+  .container {
+    margin: 30px auto;
+    width: 300px;
+  }
+  h1 {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 20px 0 10px;
+  }
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .inc-exp-container {
+    background-color: #e9d8d8;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+  }
+  .inc-exp-container > div:first-of-type {
+    border-right: 1px solid #dedede;
+  }
