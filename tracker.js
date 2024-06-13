@@ -5,3 +5,9 @@ const list = document.getElemntById('list');
 const form = document.getElementById('form');
 const text = document.getElementById('text');
 const amount = document.getElementById('');
+
+const localStorageTransactions = JSON.parse(
+    localStorage.getItem('transactions')
+);
+let transactions =
+    localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
