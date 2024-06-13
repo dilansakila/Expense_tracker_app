@@ -42,9 +42,8 @@ header {
     background-color: #e9d8d8;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    mar;gin: 20px 0
   }
   .inc-exp-container > div {
     flex: 1;
@@ -52,4 +51,63 @@ header {
   }
   .inc-exp-container > div:first-of-type {
     border-right: 1px solid #dedede;
+  }
+
+  .money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  .money.plus {
+    color: #505853;
+  }
+  .money.minus {
+    color: #a77a75;
+  }
+  label {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  input[type='text'],
+  input[type='number'] {
+    border: 10px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+  .btn {
+    cursor: pointer;
+    background-color: #0366D6;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    margin: 5px 0 30px;
+
+  }
+  .btn:focus,
+  .delete-btn:focus {
+    outline: 0;
+  }
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .list li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  .list li.plus {
+    border-right: 10px solid #2ecc71;
+  }
+  .list li.minus {
+    border-right: 15px solid #c0392b;
   }
