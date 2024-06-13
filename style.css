@@ -113,3 +113,23 @@ header {
     border-right: 15px solid #c0392b;
   }
 
+  .delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    transition: opacity 0.3s ease;
+  }
+  .list li:hover .delete-btn {
+    opacity: 1;
+  }
+   
+  
+  
+  Output Till Now
