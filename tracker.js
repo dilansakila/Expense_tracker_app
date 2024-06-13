@@ -63,4 +63,20 @@ let transactions =
         money_plus.innerText = `$${inome}`;
         money_minus.innerText = `$${expense}`;
     }
-    
+    function removeTransaction(id) {
+        transactions = transactions.filter(transaction => transaction.id !== id);
+        updateLocalStorage();
+        init();
+    }
+
+    function updateLocalStorage() {
+        localStorage.setItem('transactions', JSON stringify(transactions));
+    }
+    // Init app
+    function init() {
+        list.innerHTML = '';
+        transactions.forEh(addTransactionDOM);
+        updateValues();
+    }
+    init();
+    form.addEventListener('submit', addTransaction);
