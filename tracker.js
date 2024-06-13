@@ -31,3 +31,22 @@ let transactions =
         }
     }
     
+    function generateID() {
+        return Math.floor(Math.random() * 100000000);
+    }
+    // Add transactions to DOM list
+    function addTransactionDOM(trasaction) {
+        // Get sign
+        const sign = transaction.amount < 0 ? ' : '+';
+        const item = document.createElement('');
+        // Add class based on value
+        item.classList.add(transaction.amount < 0 ? 'minus' : 'plus');
+        item.innerHTML = `
+        ${transaction.text} <span>${sasn}${Math.abs(
+            transaction.amount
+        )}</span> <button class="delete-btn" onclick="removeTransaction(${transaction.id
+            })">x</button>
+      `;
+        list.appendChild(item);
+    }
+    
