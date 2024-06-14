@@ -35,7 +35,7 @@ let transactions =
         return Math.floor(Math.random() * 100000000);
     }
     // Add transactions to DOM list
-    function addTransactionDOM(trasaction) {
+    function addTransactionDOM(transaction) {
         // Get sign
         const sign = transaction.amount < 0 ? ' : '+';
         const item = document.createElement('');
@@ -60,7 +60,7 @@ let transactions =
             -1
         ).toFixed(2)
         balance.innerText = `$${total}`;
-        money_plus.innerText = `$${inome}`;
+        money_plus.innerText = `$${income}`;
         money_minus.innerText = `$${expense}`;
     }
     function removeTransaction(id) {
